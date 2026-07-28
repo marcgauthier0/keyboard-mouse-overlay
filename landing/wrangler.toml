@@ -1,0 +1,14 @@
+# Cloudflare Workers configuration for Gaming Keypress Overlay Landing Page
+
+name = "gaming-overlay-landing"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# For static site hosting, use Pages instead
+# This worker.js is for dynamic serving if needed
+
+[env.production]
+name = "gaming-overlay-landing"
+
+[env.staging]
+name = "gaming-overlay-landing-staging"

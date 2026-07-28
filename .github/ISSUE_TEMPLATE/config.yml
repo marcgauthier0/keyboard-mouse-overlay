@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/yourusername/keyboard_overlay_windows/discussions
+    about: Poser des questions générales, discuter des features, partager des idées
+  - name: 📖 Documentation
+    url: https://github.com/yourusername/keyboard_overlay_windows/blob/main/README.md
+    about: Lire la documentation complète du projet

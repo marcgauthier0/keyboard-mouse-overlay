@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gaming Keypress Overlay - Real-time keyboard and mouse visualization for competitive gaming. Ultra-low latency overlay for streaming and pro gaming.">
+    <title>Gaming Keypress Overlay - Real-time Keyboard & Mouse Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Gaming Keypress Overlay</span>
+                </h1>
+                <p class="hero-subtitle">Real-time keyboard and mouse visualization for competitive gaming</p>
+                <p class="hero-description">
+                    Ultra-low latency overlay designed for streaming, pro gaming, and tutorials. 
+                    Capture every keystroke with <strong>&lt;1ms latency</strong> using Raw Input API.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">&lt;1ms</div>
+                        <div class="stat-label">Latency</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">120 FPS</div>
+                        <div class="stat-label">Rendering</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Capture Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Built for Competitive Gaming</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Ultra-Low Latency</h3>
+                    <p>Raw Input API on dedicated thread with highest priority. Zero-allocation input state for maximum performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Free Color Customization</h3>
+                    <p>Choose every overlay color with a Windows color picker or precise HEX values.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖱️</div>
+                    <h3>Full Mouse Support</h3>
+                    <p>Track all mouse buttons (L/R/Middle, X1/X2), scroll wheel with animation, and mouse position display.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>Multiple Layouts</h3>
+                    <p>QWERTY, AZERTY, QWERTZ support. FPS, MMO, MOBA, Racing, and Survival game configurations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📺</div>
+                    <h3>OBS Ready</h3>
+                    <p>Optimized for streaming with background capture support. Perfect for tutorials and live streams.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Anti-Cheat Safe</h3>
+                    <p>Uses standard Raw Input API. No hooks, no DLL injection. Safe for competitive gaming environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Highlights -->
+    <section class="technical">
+        <div class="container">
+            <h2 class="section-title">Technical Excellence</h2>
+            <div class="technical-content">
+                <div class="technical-item">
+                    <h3>Thread Architecture</h3>
+                    <p>Dedicated input thread with <code>Highest</code> priority, completely isolated from UI rendering. CPU affinity optimization for multi-core systems.</p>
+                </div>
+                <div class="technical-item">
+                    <h3>Flash System</h3>
+                    <p>30ms flash duration + 50ms visual latch ensures ultra-rapid key presses (&lt;16ms) are always captured and displayed.</p>
+                </div>
+                <div class="technical-item">
+                    <h3>Event Buffer</h3>
+                    <p>Circular buffer captures ALL key presses, even those lasting &lt;1ms. Zero key loss guarantee.</p>
+                </div>
+                <div class="technical-item">
+                    <h3>Win32 + GDI+</h3>
+                    <p>100% native Win32 rendering for maximum performance. No WPF overhead, direct hardware acceleration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Download</h2>
+            <div class="download-content">
+                <div class="download-card">
+                    <h3>Windows Installer</h3>
+                    <p>Recommended for most users. Includes automatic .NET 8.0 Runtime check.</p>
+                    <a href="#" class="btn btn-primary btn-large" id="download-installer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Installer
+                    </a>
+                    <p class="download-size">~15 MB</p>
+                </div>
+                <div class="download-card">
+                    <h3>Portable Version</h3>
+                    <p>Standalone executable. Requires .NET 8.0 Runtime installed separately.</p>
+                    <a href="#" class="btn btn-secondary btn-large" id="download-portable">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Portable
+                    </a>
+                    <p class="download-size">~12 MB</p>
+                </div>
+            </div>
+            <div class="requirements">
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>Windows 10/11 (64-bit)</li>
+                    <li>.NET 8.0 Runtime (included in installer)</li>
+                    <li>2 GB RAM minimum</li>
+                    <li>DirectX 9.0c compatible graphics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source -->
+    <section class="open-source">
+        <div class="container">
+            <div class="open-source-content">
+                <h2>Free and Open Source</h2>
+                <p class="open-source-description">
+                    The complete application is available under the MIT License. Every feature is available to everyone:
+                </p>
+                <ul class="open-source-features">
+                    <li>🎨 Unrestricted HEX color customization</li>
+                    <li>✨ Animated backgrounds</li>
+                    <li>🖼️ Custom logo support</li>
+                    <li>🔓 All features included under the MIT License</li>
+                </ul>
+                <a href="https://github.com/yourusername/keyboard_overlay_windows" class="btn btn-primary">View Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Gaming Keypress Overlay</h4>
+                    <p>Ultra-low latency keyboard and mouse visualization for competitive gaming.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="https://github.com/yourusername/keyboard_overlay_windows" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#license">License (MIT)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gaming Keypress Overlay. Open source under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

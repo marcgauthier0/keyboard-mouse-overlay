@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  
+  <!-- UI Strings -->
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Overlay de Touches Gaming</value>
+  </data>
+  <data name="MenuOptions" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="MenuColors" xml:space="preserve">
+    <value>Couleurs</value>
+  </data>
+  <data name="MenuKeyboardMode" xml:space="preserve">
+    <value>Mode Clavier</value>
+  </data>
+  <data name="MenuPerformanceMode" xml:space="preserve">
+    <value>Mode Performance</value>
+  </data>
+  <data name="MenuLanguage" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="MenuLanguageEnglish" xml:space="preserve">
+    <value>Anglais</value>
+  </data>
+  <data name="MenuLanguageFrench" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  
+  <!-- Keyboard Modes -->
+  <data name="KeyboardModeFull" xml:space="preserve">
+    <value>Complet</value>
+  </data>
+  <data name="KeyboardModeGaming" xml:space="preserve">
+    <value>Gaming (Shooter)</value>
+  </data>
+  
+  <!-- Performance Modes -->
+  <data name="PerformanceModeCompetitive" xml:space="preserve">
+    <value>Gaming Compétitif</value>
+  </data>
+  <data name="PerformanceModeDesktop" xml:space="preserve">
+    <value>Desktop / Usage Normal</value>
+  </data>
+  
+  <!-- Messages -->
+  <data name="MessageRawInputFailed" xml:space="preserve">
+    <value>Échec d'initialisation Raw Input. Mode secours activé.</value>
+  </data>
+  <data name="MessageCrashReported" xml:space="preserve">
+    <value>L'application a planté. Rapport sauvegardé à : {0}</value>
+  </data>
+  <data name="MessageLanguageChanged" xml:space="preserve">
+    <value>Langue changée. Veuillez redémarrer l'application pour que les changements prennent effet.</value>
+  </data>
+  <data name="MessageApplicationRunning" xml:space="preserve">
+    <value>L'application est déjà en cours d'exécution!</value>
+  </data>
+  
+  <!-- About Section -->
+  <data name="AboutTitle" xml:space="preserve">
+    <value>À PROPOS</value>
+  </data>
+  <data name="AboutMadeWithBrain" xml:space="preserve">
+    <value>Fait avec le cerveau de Marc</value>
+  </data>
+  <data name="AboutMadeWithCode" xml:space="preserve">
+    <value>et le code de l'IA :D</value>
+  </data>
+  <data name="AboutAppName" xml:space="preserve">
+    <value>Keyboard &amp; Mouse Overlay</value>
+  </data>
+  
+  <!-- UI Labels -->
+  <data name="TitleBarText" xml:space="preserve">
+    <value>⌨️ Keyboard and Mouse Overlay</value>
+  </data>
+  <data name="ToolTipOptions" xml:space="preserve">
+    <value>Options (ESC)</value>
+  </data>
+  <data name="ToolTipMinimize" xml:space="preserve">
+    <value>Minimiser</value>
+  </data>
+  <data name="ToolTipMaximize" xml:space="preserve">
+    <value>Maximiser / Restaurer</value>
+  </data>
+  <data name="ToolTipClose" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="LabelStyle" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="LabelKeyboardMode" xml:space="preserve">
+    <value>Mode Clavier:</value>
+  </data>
+  <data name="LabelMousePosition" xml:space="preserve">
+    <value>Position Souris:</value>
+  </data>
+  <data name="LabelPerformanceMode" xml:space="preserve">
+    <value>Mode Performance</value>
+  </data>
+  <data name="CheckBoxShowMousePosition" xml:space="preserve">
+    <value>Afficher Position Souris</value>
+  </data>
+  <data name="MousePositionRight" xml:space="preserve">
+    <value>Droite (Droitier)</value>
+  </data>
+  <data name="MousePositionLeft" xml:space="preserve">
+    <value>Gauche (Gaucher)</value>
+  </data>
+  <data name="LabelGamingKeyboard" xml:space="preserve">
+    <value>GAMING KEYBOARD</value>
+  </data>
+  <data name="LabelLastInput" xml:space="preserve">
+    <value>DERNIÈRE ENTRÉE: </value>
+  </data>
+  <data name="LabelGamingMouse" xml:space="preserve">
+    <value>GAMING MOUSE</value>
+  </data>
+  <data name="LabelPosition" xml:space="preserve">
+    <value>POSITION</value>
+  </data>
+  <data name="LabelX" xml:space="preserve">
+    <value>X: </value>
+  </data>
+  <data name="LabelY" xml:space="preserve">
+    <value>Y: </value>
+  </data>
+  <data name="LabelActiveInputs" xml:space="preserve">
+    <value>ENTRÉES ACTIVES</value>
+  </data>
+</root>

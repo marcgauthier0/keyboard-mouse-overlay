@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Pure Win32/GDI application - no WPF -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Localization support -->
+    <NeutralLanguage>en</NeutralLanguage>
+    <SatelliteResourceLanguages>en;fr-CA</SatelliteResourceLanguages>
+    <Authors>Marc Gauthier and contributors</Authors>
+    <Description>Free and open-source keyboard and mouse overlay for Windows.</Description>
+    <AssemblyTitle>Keyboard &amp; Mouse Overlay</AssemblyTitle>
+    <Product>Keyboard &amp; Mouse Overlay</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+    <PackageReference Include="Vortice.Direct2D1" Version="3.2.0" />
+    <PackageReference Include="Vortice.Mathematics" Version="2.1.0" />
+    <PackageReference Include="Vortice.Win32.Graphics.DirectWrite" Version="2.3.0" />
+    <PackageReference Include="Vortice.DXGI" Version="3.2.0" />
+    <!-- Direct2D via Vortice (GPU-accelerated rendering) -->
+    <!-- Note: Windows Forms is part of .NET 8.0 framework, no separate package needed -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Exclude test files from main project -->
+    <Compile Remove="GamingKeypressOverlay.Tests\**" />
+    <EmbeddedResource Remove="GamingKeypressOverlay.Tests\**" />
+    <None Remove="GamingKeypressOverlay.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Localization resources -->
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Strings.fr-CA.resx">
+      <DependentUpon>Strings.resx</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

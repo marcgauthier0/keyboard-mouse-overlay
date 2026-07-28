@@ -1,0 +1,95 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Visual Studio
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Rider
+.idea/
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User settings (don't commit personal settings)
+appsettings.local.json
+*.local.json
+
+# Logs
+*.log
+logs/
+Logs/
+
+# Installer build artifacts
+installer/output/
+installer/*.exe
+!installer/*.nsi
+!installer/*.md
+
+# Certificates (NEVER commit certificates!)
+*.pfx
+*.p12
+*.cer
+*.p7b
+*.key
+*.crt
+*CodeSigning*.pfx
+*CodeSigning*.cer
+certificates/
+certs/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# WPF temporary files
+*.wpftmp.csproj
+
+# Rider
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains Rider
+.idea/
+*.sln.iml
