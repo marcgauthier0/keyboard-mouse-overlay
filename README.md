@@ -1,3 +1,6 @@
+<img width="665" height="344" alt="image" src="https://github.com/user-attachments/assets/ac8c5d4c-26c6-47b0-9790-c6620f41fde8" />
+
+
 # Keyboard & Mouse Overlay
 
 A low-latency keyboard and mouse overlay for Windows. It is useful for streaming, tutorials, presentations, accessibility demonstrations, software training, and games.
